@@ -78,7 +78,7 @@ body {
 /* Оформление цвета текста placeholder */
 
 .search-input::-moz-placeholder {
-    color: #BFBFBF;;
+	color: #BFBFBF;;
 }
 .search-input::-webkit-input-placeholder {
 	color: #BFBFBF;
