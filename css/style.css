@@ -9,10 +9,12 @@ body {
 	max-width: 1440px;
 	height: 64px;
 	background: #FA8C16;
-	margin: 0 auto;
+	margin: auto;
 	padding-top: 16px;
 	padding-bottom: 16px;
 	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+	margin-bottom: 30px;
+
 }
 .header-wrapper {
 	max-width: 1200px;
@@ -92,5 +94,52 @@ body {
 .search-input::placeholder {
 	color: #BFBFBF;
 }
+
+/* Блок с контентом */
+
+.content {
+	max-width: 1200px;
+	width: 90%;
+	margin: auto;
+}
+.post {
+	max-width: 800px;
+	background-color: #fff;
+}
+.post-title {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 19px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	color: #262626;
+}
+.post-body {
+	padding-top: 35px;
+	padding-left: 35px;
+	padding-right: 35px;
+	padding-bottom: 22px;
+}
+.post-text {
+	padding-bottom: 10px;
+	font-size: 14px;
+	line-height: 22px;
+	color: #262626;
+}
+.post-tag {
+	text-decoration: none;
+	margin-right: 10px;
+	font-size: 14px;
+	line-height: 22px;
+	color: #BFBFBF;
+}
+.post-footer {
+	border: 1px solid red
+}
+.post-buttons .icon {
+	fill: #8C8C8C;
+}
+
 
 
