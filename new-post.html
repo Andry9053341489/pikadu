@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pikadu-новый пост</title>
+	<link rel="stylesheet" href="/css/normalize.css">
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+	<!-- Верстка header -->
+
+	<header class="header">
+		<div class="header-wrapper">
+
+			<div class="header-logo">
+				<a href="/" class="header-logo-link">
+					<img src="/img/pikadu.svg" alt="logo" class="header-img">
+				</a>
+			</div>
+			<!-- /.header-logo -->
+
+			<div class="header-nav">
+				<ul class="header-menu">
+					<li class="header-menu-item"><a href="#" class="header-menu-link">Свежее</a></li>
+					<li class="header-menu-item"><a href="#" class="header-menu-link">Лучшее</a></li>
+					<li class="header-menu-item"><a href="#" class="header-menu-link">Горячее</a></li>
+					<li class="header-menu-item"><a href="#" class="header-menu-link">Подписки</a></li>
+				</ul>
+			</div>
+			<!-- /.header-nav -->
+
+			<div class="header-search">
+				<input type="text" class="search-input" placeholder="Поиск по сайту">
+				<button class="search-button">
+					<img src="/img/icon-search.svg" alt="search" class="icon-search">
+				</button>
+			</div>
+			<!-- /.header-search -->
+			<a href="#" class="menu-toggle" id="menu-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+		</div>
+		<!-- /.header wrapper -->
+	</header>
+	<!-- /.header -->
+
+	<!-- Верстка блока с контентом и сайдбара -->
+
+	<div class="content">
+		<section class="section">
+			<main class="main">
+				<form action="#" class="add-post">
+					<input type="text" name="post-title" class="add-title" placeholder="Заголовок поста">
+					<textarea name="post-text" id="text" class="add-text" placeholder="Текст вашего поста"></textarea>
+					<div class="add-buttons">
+						<button type="submit" class="button add-button">
+							<svg class="icon sidebar-button-icon">
+								<use xlink:href="/img/icons.svg#sidebar-button-icon"></use>
+							</svg>
+							<span class="button-text">Опубликовать пост</span>
+						</button>
+						<div class="buttons-outline">
+							<button class="button button-outline">
+								<svg class="icon icon-foto">
+									<use xlink:href="/img/icons.svg#foto"></use>
+								</svg>Видео</button>
+							<button class="button button-outline">
+								<svg class="icon icon-video">
+									<use xlink:href="/img/icons.svg#video"></use>
+								</svg>Фото</button>
+						</div>
+					</div>
+
+				</form>
+			</main>
+		</section>
+		<!-- /.section -->
+		<sidebar class="sidebar">
+			<div class="sidebar-block">
+				<div class="sidebar-header">
+					<div class="sidebar-user">
+						<a href="#" class="sidebar-avatar-link"><img src="/img/avatar.jpg" alt="" class="avatar-foto"></a>
+						<a href="#" class="sidebar-user-link">lenaivanova</a>
+					</div>
+					<button class="button button-sidebar-header">
+						<svg class="icon icon-sidebar">
+							<use xlink:href="/img/icons.svg#sidebar-header-icon"></use>
+						</svg>
+					</button>
+				</div>
+				<!-- /.sidebar-header -->
+				<div class="sidebar-nav">
+					<ul class="sidebar-menu-items">
+						<li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link">Ответы</a></li>
+						<li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link">Комментарии</a></li>
+						<li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link active">Оценки</a></li>
+						<li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link">Сохранённое</a></li>
+						<li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link">Подписки</a></li>
+						<li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link">Заметки</a></li>
+						<li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link">Игнор-лист</a></li>
+					</ul>
+				</div>
+				<!-- /.sidebar-menu -->
+			</div>
+			<!-- /.sidebar-block -->
+			<div class="sidebar-block">
+				<a href "#" class="sidebar-promo"></a>
+				<!-- /.sidebar-promo -->
+			</div>
+			<!-- /.sidebar-block -->
+		</sidebar>
+		<!-- /.sidebar -->
+	</div>
+	<!-- /.content -->
+	<script src="/js/main.js"></script>
+</body>
+</html>
