@@ -3,37 +3,38 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Pikadu-новый пост</title>
+	<title>Pikadu-добавление поста</title>
 	<link rel="stylesheet" href="/css/normalize.css">
 	<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
-	<!-- Верстка header -->
+<!-- Верстаем хедер -->
 
-	<header class="header">
+<header class="header">
 		<div class="header-wrapper">
-
 			<div class="header-logo">
-				<a href="/" class="header-logo-link">
-					<img src="/img/pikadu.svg" alt="logo" class="header-img">
+				<a href="/" class="header-logo-link"><img src="/img/pikadu.svg" alt="logo" class="logo"></a>
+				<a href="#" class="nav-toggle" id="nav-toggle">
+					<span></span>
+					<span></span>
+					<span></span>
 				</a>
+				<!-- /.nav-toggle -->
 			</div>
 			<!-- /.header-logo -->
-
-			<div class="header-nav">
-				<ul class="header-menu">
-					<li class="header-menu-item"><a href="#" class="header-menu-link">Свежее</a></li>
-					<li class="header-menu-item"><a href="#" class="header-menu-link">Лучшее</a></li>
-					<li class="header-menu-item"><a href="#" class="header-menu-link">Горячее</a></li>
-					<li class="header-menu-item"><a href="#" class="header-menu-link">Подписки</a></li>
+			<nav class="header-nav">
+				<ul class="menu-items">
+					<li class="menu-item"><a href="#" class="menu-item-link">Свежее</a></li>
+					<li class="menu-item"><a href="#" class="menu-item-link">Лучшее</a></li>
+					<li class="menu-item"><a href="#" class="menu-item-link">Горячее</a></li>
+					<li class="menu-item"><a href="#" class="menu-item-link">Подписки</a></li>
 				</ul>
-			</div>
+			</nav>
 			<!-- /.header-nav -->
-
 			<div class="header-search">
-				<input type="text" class="search-input" placeholder="Поиск по сайту">
-				<button class="search-button">
+				<input type="text" class="header-search-input" placeholder="Поиск по сайту">
+				<button class="button-search">
 					<img src="/img/icon-search.svg" alt="search" class="icon-search">
 				</button>
 			</div>
@@ -43,57 +44,61 @@
 				<span></span>
 				<span></span>
 			</a>
+			<!-- /.menu-toggle -->
 		</div>
-		<!-- /.header wrapper -->
-	</header>
-	<!-- /.header -->
+		<!-- /.header-wrapper -->
+</header>
+<!-- /.header -->
 
-	<!-- Верстка блока с контентом и сайдбара -->
+<!-- Верстаем блок с контентом и sidebar -->
 
-	<div class="content">
-		<section class="section">
-			<main class="main">
-				<form action="#" class="add-post">
-					<input type="text" name="post-title" class="add-title" placeholder="Заголовок поста">
-					<textarea name="post-text" id="text" class="add-text" placeholder="Текст вашего поста"></textarea>
-					<div class="add-buttons">
-						<button type="submit" class="button add-button">
-							<svg class="icon sidebar-button-icon">
-								<use xlink:href="/img/icons.svg#sidebar-button-icon"></use>
-							</svg>
-							<span class="button-text">Опубликовать пост</span>
-						</button>
-						<div class="buttons-outline">
-							<button class="button button-outline">
-								<svg class="icon icon-foto">
-									<use xlink:href="/img/icons.svg#foto"></use>
-								</svg>Видео</button>
-							<button class="button button-outline">
-								<svg class="icon icon-video">
-									<use xlink:href="/img/icons.svg#video"></use>
-								</svg>Фото</button>
-						</div>
-					</div>
-
-				</form>
-			</main>
-		</section>
-		<!-- /.section -->
+<div class="content">
+	<div class="content-wrapper">
+		<main class="new-post">
+			<form class="add-post">
+				<input type="text" name="post-title" class="add-title" placeholder="Заголовок поста">
+				<textarea name="post-text" id="post-text" class="add-text" placeholder="Текст вашего поста"></textarea>
+				<!-- /#.add-text -->
+				<div class="form-buttons">
+					<button type="submit" class="button add-button">
+						<svg class="icon icon-fire">
+							<use xlink:href="/img/icons.svg#fire"></use>
+						</svg>
+						Отправить
+					</button>
+					<button class="button-outline">
+						<svg class="icon icon-video">
+							<use xlink:href="/img/icons.svg#video"></use>
+						</svg>
+						Видео
+					</button>
+					<button class="button-outline">
+						<svg class="icon icon-foto">
+							<use xlink:href="/img/icons.svg#foto"></use>
+						</svg>
+						Фото
+					</button>
+				</div>
+				<!-- /.form-buttons -->
+			</form>
+			<!-- /.add-post -->
+		</main>
+		<!-- /.new-post -->
 		<sidebar class="sidebar">
-			<div class="sidebar-block">
-				<div class="sidebar-header">
+			<div class="sidebar-menu">
+				<div class="sidebar-menu-header">
 					<div class="sidebar-user">
-						<a href="#" class="sidebar-avatar-link"><img src="/img/avatar.jpg" alt="" class="avatar-foto"></a>
-						<a href="#" class="sidebar-user-link">lenaivanova</a>
+					<img src="/img/avatar.jpg" alt="Аватар" class="user-avatar">
+					<a href="" class="user-link">lenaivanova</a>
 					</div>
-					<button class="button button-sidebar-header">
-						<svg class="icon icon-sidebar">
-							<use xlink:href="/img/icons.svg#sidebar-header-icon"></use>
+					<button class="button-off">
+						<svg class="icon icon-off">
+							<use xlink:href="/img/icons.svg#off"></use>
 						</svg>
 					</button>
 				</div>
-				<!-- /.sidebar-header -->
-				<div class="sidebar-nav">
+				<!-- /.sidebar-menu-header -->
+				<div class="sidebar-menu-nav">
 					<ul class="sidebar-menu-items">
 						<li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link">Ответы</a></li>
 						<li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link">Комментарии</a></li>
@@ -104,18 +109,17 @@
 						<li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link">Игнор-лист</a></li>
 					</ul>
 				</div>
-				<!-- /.sidebar-menu -->
+				<!-- /.sidebar-menu-nav -->
 			</div>
-			<!-- /.sidebar-block -->
-			<div class="sidebar-block">
-				<a href "#" class="sidebar-promo"></a>
-				<!-- /.sidebar-promo -->
-			</div>
-			<!-- /.sidebar-block -->
+			<!-- /.sidebar-menu -->
+			<a href="#" class="sidebar-promo"></a>
+			<!-- /.promo -->
 		</sidebar>
 		<!-- /.sidebar -->
 	</div>
-	<!-- /.content -->
-	<script src="/js/main.js"></script>
+	<!-- /.content-wrapper -->
+</div>
+<!-- /.content -->
+<script src="/js/main.js"></script>
 </body>
 </html>

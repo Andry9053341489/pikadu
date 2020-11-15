@@ -8,12 +8,19 @@
 	<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+
 <!-- Верстаем хедер -->
+
 <header class="header">
-	<section class="section">
 		<div class="header-wrapper">
 			<div class="header-logo">
 				<a href="/" class="header-logo-link"><img src="/img/pikadu.svg" alt="logo" class="logo"></a>
+				<a href="#" class="nav-toggle" id="nav-toggle">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+				<!-- /.nav-toggle -->
 			</div>
 			<!-- /.header-logo -->
 			<nav class="header-nav">
@@ -26,17 +33,189 @@
 			</nav>
 			<!-- /.header-nav -->
 			<div class="header-search">
-				<input type="text" class="header-search-input">
-				<button>
+				<input type="text" class="header-search-input" placeholder="Поиск по сайту">
+				<button class="button-search">
 					<img src="/img/icon-search.svg" alt="search" class="icon-search">
 				</button>
 			</div>
 			<!-- /.header-search -->
+			<a href="#" class="menu-toggle" id="menu-toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a> <!-- /.menu-toggle -->
 		</div>
 		<!-- /.header-wrapper -->
-	</section>
-	<!-- /.section -->
 </header>
 <!-- /.header -->
+
+<!-- Верстаем блок с контентом и sidebar -->
+
+<div class="content">
+	<div class="content-wrapper">
+		<main class="post-wrapper">
+			<article class="post">
+				<header class="post-header">
+					<h2 class="header-title">Заголовок поста с интригой</h2>
+				</header>
+				<!-- /.post-header -->
+				<section>
+					<p class="post-text-indent">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Страну по всей запятой бросил пор ему агентство силуэт рекламных ее безорфографичный строчка, реторический взгляд что послушавшись языкового вершину себя от всех встретил, грустный снова это. Собрал он они наш текстами страна букв имени вопроса маленький ведущими?</p>
+					<p class="post-text-indent">Скатился знаках подпоясал, рукопись, языкового проектах свой переписывается жаренные большой образ гор грамматики они прямо запятой домах, первую агентство своих продолжил свою по всей дороге. По всей не языком, переписали маленький страна что продолжил предупредила ты первую сих оксмокс лучше? Подпоясал которой текстов несколько своего!</p>
+					<p class="post-text-indent">Возвращайся вскоре это сих маленькая единственное до вершину ему залетают составитель подпоясал знаках курсивных буквенных снова от всех вопроса, города жаренные взобравшись вдали себя текстов послушавшись одна ведущими семантика? Города необходимыми о лучше.</p>
+					<p class="post-text-indent">Возвращайся вскоре это сих маленькая единственное до вершину ему залетают составитель подпоясал знаках курсивных буквенных снова от всех вопроса, города жаренные взобравшись вдали себя текстов послушавшись одна ведущими семантика? Города необходимыми о лучше.</p>
+				</section>
+				<section>
+					<a href="#" class="tag-link">#свежее</a>
+					<a href="#" class="tag-link">#горячее</a>
+					<a href="#" class="tag-link">#мое</a>
+					<a href="#" class="tag-link">#случайность</a>
+				</section>
+			</article>
+			<!-- /.post-->
+			<footer class="post-footer">
+				<div class="buttons">
+					<button class="button-like">
+						<svg class="icon icon-like">
+							<use xlink:href="/img/icons.svg#like"></use>
+						</svg>
+						<span class="like-counter">26</span>
+					</button>
+					<button class="button-comment">
+						<svg class="icon icon-comment">
+							<use xlink:href="/img/icons.svg#comment"></use>
+						</svg>
+						<span class="comment-counter">157</span>
+					</button>
+					<button class="button-save">
+						<svg class="icon icon-save">
+							<use xlink:href="/img/icons.svg#save"></use>
+						</svg>
+					</button>
+					<button class="button-share">
+						<svg class="icon icon-share">
+							<use xlink:href="/img/icons.svg#share"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="author">
+					<div class="autor-wrapper">
+						<a href="" class="author-link">lenaivanova</a>
+						<span class="time">5минут назад</span>
+					</div>
+					<img src="/img/avatar.jpg" alt="Фото автора" class="author-foto">
+				</div>
+			</footer>
+			<!-- /.post-footer -->
+			<article class="post">
+					<header class="post-header">
+						<h2 class="header-title">Заголовок поста с интригой</h2>
+					</header>
+					<!-- /.post-header -->
+					<section>
+						<p class="post-text-indent">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Страну по всей запятой бросил пор ему агентство силуэт рекламных ее безорфографичный строчка, реторический взгляд что послушавшись языкового вершину себя от всех встретил, грустный снова это. Собрал он они наш текстами страна букв имени вопроса маленький ведущими?</p>
+						<p class="post-text-indent">Скатился знаках подпоясал, рукопись, языкового проектах свой переписывается жаренные большой образ гор грамматики они прямо запятой домах, первую агентство своих продолжил свою по всей дороге. По всей не языком, переписали маленький страна что продолжил предупредила ты первую сих оксмокс лучше? Подпоясал которой текстов несколько своего!</p>
+						<p class="post-text-indent">Возвращайся вскоре это сих маленькая единственное до вершину ему залетают составитель подпоясал знаках курсивных буквенных снова от всех вопроса, города жаренные взобравшись вдали себя текстов послушавшись одна ведущими семантика? Города необходимыми о лучше.</p>
+						<p class="post-text-indent">Возвращайся вскоре это сих маленькая единственное до вершину ему залетают составитель подпоясал знаках курсивных буквенных снова от всех вопроса, города жаренные взобравшись вдали себя текстов послушавшись одна ведущими семантика? Города необходимыми о лучше.</p>
+					</section>
+					<section>
+						<a href="#" class="tag-link">#свежее</a>
+						<a href="#" class="tag-link">#горячее</a>
+						<a href="#" class="tag-link">#мое</a>
+						<a href="#" class="tag-link">#случайность</a>
+					</section>
+			</article>
+			<!-- /.post-->
+			<footer class="post-footer">
+				<div class="buttons">
+					<button class="button-like">
+						<svg class="icon icon-like">
+							<use xlink:href="/img/icons.svg#like"></use>
+						</svg>
+						<span class="like-counter">26</span>
+					</button>
+					<button class="button-comment">
+						<svg class="icon icon-comment">
+							<use xlink:href="/img/icons.svg#comment"></use>
+						</svg>
+						<span class="comment-counter">157</span>
+					</button>
+					<button class="button-save">
+						<svg class="icon icon-save">
+							<use xlink:href="/img/icons.svg#save"></use>
+						</svg>
+					</button>
+					<button class="button-share">
+						<svg class="icon icon-share">
+							<use xlink:href="/img/icons.svg#share"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="author">
+					<div class="autor-wrapper">
+						<a href="" class="author-link">lenaivanova</a>
+						<span class="time">5минут назад</span>
+					</div>
+					<img src="/img/avatar.jpg" alt="Фото автора" class="author-foto">
+				</div>
+			</footer>
+			<!-- /.post-footer -->
+		</main>
+		<!-- /.post-wrapper -->
+		<sidebar class="sidebar">
+			<div class="sidebar-menu">
+				<div class="sidebar-menu-header">
+					<div class="sidebar-user">
+					<img src="/img/avatar.jpg" alt="Аватар" class="user-avatar">
+					<a href="" class="user-link">lenaivanova</a>
+					</div>
+
+					<button class="button-off">
+						<svg class="icon icon-off">
+							<use xlink:href="/img/icons.svg#off"></use>
+						</svg>
+					</button>
+				</div>
+				<!-- /.sidebar-menu-header -->
+				<div class="sidebar-menu-nav">
+					<ul class="sidebar-menu-items">
+						<li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link">Ответы</a></li>
+						<li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link">Комментарии</a></li>
+						<li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link active">Оценки</a></li>
+						<li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link">Сохранённое</a></li>
+						<li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link">Подписки</a></li>
+						<li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link">Заметки</a></li>
+						<li class="sidebar-menu-item"><a href="#" class="sidebar-menu-link">Игнор-лист</a></li>
+					</ul>
+				</div>
+				<!-- /.sidebar-menu-nav -->
+			</div>
+			<!-- /.sidebar-menu -->
+			<a href="new-post.html" class="button sidebar-button">
+				<svg class="icon icon-fire">
+					<use xlink:href="/img/icons.svg#fire"></use>
+				</svg>
+				Опубликовать пост
+			</a>
+			<!-- /.sidebar-button -->
+			<aside class="comment">
+				<div class="comment-header">
+					<h2 class="header-title">Комментарий дня</h2>
+				</div>
+					<div class="comment-body">
+						<span class="comment-body-title">Как обмануть банкомат, если вы хотите снять больше наличных</span>
+						<p class="comment-text">Таким образом укрепление и развитие структуры требуют от нас анализа форм развития. Не следует, однако забывать, что реализация намеченных плановых заданий требуют от нас анализа позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же консультация...</p>
+					</div>
+			</aside>
+			<!-- /.comment -->
+			<a href="#" class="sidebar-promo"></a>
+			<!-- /.promo -->
+		</sidebar>
+		<!-- /.sidebar -->
+	</div>
+	<!-- /.content-wrapper -->
+</div>
+<!-- /.content -->
+<script src="/js/main.js"></script>
 </body>
 </html>
